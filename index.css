@@ -1,0 +1,230 @@
+body {
+    /* background: linear-gradient(#005082, #00a8cc); */
+    background: linear-gradient(#005082, #ffffff);
+
+    background-image: linear-gradient(to bottom right, #0812a1, rgba(255, 255, 100, 0));
+
+    background: linear-gradient(#e66465, #9198e5);
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header__tittle {
+    text-align: center;
+    font-size: 40px;
+}
+
+.main_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_container__card {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .2);
+    border-radius: 15px;
+    padding: 15px;
+    padding-top: 25px;
+    margin-bottom: 30px;
+    cursor: crosshair;
+    transition: all 0.9s;
+    /* transform: scale(0.5); Para que se haga pequeño sin necesidad de cambiar el width o height  */
+}
+
+.main_container__img {
+    margin-top: -30px;
+}
+
+.main_container__card--title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_container__card img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.main_container__img img {
+    width: 110px;
+}
+
+.container_options {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: 75px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, .2);
+    cursor: crosshair;
+}
+
+.container_options_img {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container_options__option img {
+    transition: transform .5s;
+    /* Animation */
+    width: 60px;
+}
+
+
+.instructions {
+    display: flex;
+    justify-content: center;
+    height: 35px;
+}
+
+button {
+    margin: 10px;
+    width: 215px;
+    height: 55px;
+    background-color: #47c721;
+    outline: none; /*Cuando se le haga :focus (Click al boton y no se le haga border al boton)*/
+    border: solid 1px transparent;
+    border-radius: 30px;
+    color: white;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: transparent;
+    color: black;
+    box-shadow: 0 1px 20px 0 #f0f;
+    cursor: nw-resize;
+}
+
+.container_button button:focus{ /*:focus --> Click al boton*/
+    background: black;
+    color: #fff;
+}
+
+.container_options__button {
+    background-color: transparent;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+}
+
+.container_options__button:hover {
+    transform: scale(1.5) rotate(360deg); 
+}
+
+#puntos_usuario {
+    margin-top: 2px;
+    font-size: 55px;
+    font-weight: bolder;
+    color: black;
+    text-shadow: 0px 1px 10px #f0f; 
+
+
+}
+
+#puntos_cpu {
+    margin-top: 2px;
+    font-size: 55px;
+    font-weight: bolder;
+    color: black;
+    text-shadow: 0px 1px 10px #f0f; 
+
+}
+
+.resultadito {
+    font-size: 45px;
+    text-shadow: 0px 10px 10px cyan; 
+    /* border: 1px solid red; */
+}
+
+.main_container__card--title p {
+    font-size: 30px;
+}
+
+/* #puntos_cpu:hover {
+    font-size: 75px;
+    transition: 0.5s all;  
+    cursor: crosshair;  
+} 
+
+#puntos_usuario:hover {
+    font-size: 75px;
+    transition: 0.5s all;  
+    cursor: crosshair;  
+} */
+
+.container_options button:hover {
+    cursor: nw-resize;
+    box-shadow:0 1px 10px 0 #f0f;
+    /* border: 1px solid red; */
+}
+
+.main_container__card:hover {
+    box-shadow: 0 0 25px 5px purple;
+}
+
+.container_options:hover {
+    border: none;
+	/* width: 72%;
+    height: 80px; */
+    transition: 0.5s all;
+    box-shadow: 0 1px 20px 0 purple;
+}
+
+.animate__animated.animate__bounce {
+    --animate-duration: 1.5s;
+}
+
+p {
+    text-align: center;
+}
+/*------------------------ Desktop First que empieces desde el Media Queties mas grande ------------------------*/
+
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 480px) {
+    p {
+        font-size: 30px;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .main_container__card {
+        padding: 0;
+        padding-top: 15px;
+        margin-bottom: 0;
+    }
+
+    .container_options {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .main_container__card {
+        width: 100%;
+    }
+
+}

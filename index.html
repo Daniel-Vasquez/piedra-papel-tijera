@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+	<link rel="stylesheet" href="./index.css">
+	<title>Piedra papel tijera</title>
+</head>
+
+<body>
+	<header class="header">
+		<h1 class="header__tittle animate__animated animate__bounce animate__infinite">Juego de <br /> piedra, papel o tijera.</h1>
+	</header>
+	<main class="main_container">
+		<div class="main_container__card">
+			<div class="main_container__card--title">
+				<img id="usuario" src="https://lh3.googleusercontent.com/ogw/ADGmqu_vkkfXpFlpRU13p7FChi_jpPMBgEEbiO3efb5G=s32-c-mo"
+				 alt="">
+				<p>Usuario</p>
+				<p id="puntos_usuario">0</p>
+			</div>
+
+			<div class="main_container__img">
+				<img src="versus.svg" alt="">
+			</div>
+
+			<div class="main_container__card--title">
+				<img id="cpu" src="monitor.png" alt="">
+				<p>CPU</p>
+				<p id="puntos_cpu">0</p>
+			</div>
+		</div>
+		<div class="container_options">
+			<div class="container_options_img">
+				<div class="container_options__option animate__animated animate__jello animate__repeat-3">
+					<button id="Piedra" class="container_options__button"></button>
+
+				</div>
+
+				<div class="container_options__option animate__animated animate__jello animate__repeat-3">
+					<button id="Papel" class="container_options__button"></button>
+
+				</div>
+
+				<div class="container_options__option animate__animated animate__jello animate__repeat-3">
+					<button id="Tijeras" class="container_options__button"></button>
+
+				</div>
+			</div>
+			<!-- <div class="instructions">
+                <p>Elige una opción!</p>
+            </div> -->
+		</div>
+
+		<div class="resultadito">
+			<strong>
+				<p id="resultado">Elige una de las opciones.</p>
+			</strong>
+		</div>
+
+		<div class="container_button">
+			<button id="Iniciar_juego">Iniciar juego</button>
+		</div>
+	</main>
+
+
+	<script src="game.js"></script>
+</body>
+
+</html>

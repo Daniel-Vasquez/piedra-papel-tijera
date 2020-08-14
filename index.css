@@ -1,48 +1,45 @@
 body {
-    /* background: linear-gradient(#005082, #00a8cc); */
-    background: linear-gradient(#005082, #ffffff);
-
-    background-image: linear-gradient(to bottom right, #0812a1, rgba(255, 255, 100, 0));
-
-    background: linear-gradient(#e66465, #9198e5);
-
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: white;
-    background-image: url('https://i.pinimg.com/736x/a9/a5/0e/a9a50e41264395e1dea7e682aa22b110.jpg');
-    background-size: 100% 100vh;
+  /* background: linear-gradient(#005082, #00a8cc); */
+  background: linear-gradient(#005082, #ffffff);
+  background-image: linear-gradient(to bottom right, #0812a1, rgba(255, 255, 100, 0));
+  background: linear-gradient(#e66465, #9198e5);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  background-image: url('https://i.pinimg.com/736x/a9/a5/0e/a9a50e41264395e1dea7e682aa22b110.jpg');
+  background-size: 100% 100vh;
 }
 
 .header {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .header__tittle {
-    text-align: center;
-    font-size: 40px;
+  text-align: center;
+  font-size: 40px;
 }
 
 .main_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main_container__card {
-    display: flex;
-    width: 70%;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgba(0, 0, 0, .2);
-    border-radius: 15px;
-    padding: 15px;
-    padding-top: 25px;
-    margin-bottom: 30px;
-    cursor: crosshair;
-    transition: all 0.9s;
-    backdrop-filter: blur(3px);
-    /* transform: scale(0.5); Para que se haga pequeño sin necesidad de cambiar el width o height  */
+  display: flex;
+	width: 50%;
+	min-height: 250px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .2);
+  border-radius: 15px;
+  padding: 0;
+  margin-bottom: 10px;
+  cursor: crosshair;
+  transition: all 0.9s;
+  backdrop-filter: blur(3px);
+  /* transform: scale(0.5); Para que se haga pequeño sin necesidad de cambiar el width o height  */
 }
 
 .main_container__img {
@@ -105,20 +102,20 @@ button {
     border: solid 1px transparent;
     border-radius: 30px;
     color: white;
-    transition: all 0.5s;
+		transition: all 0.5s;
+		font-size: 20px;
 }
 
 button:hover {
     background-color: transparent;
-    color: black;
     box-shadow: 0 1px 20px 0 #f0f;
     cursor: nw-resize;
 }
 
-.container_button button:focus{ /*:focus --> Click al boton*/
+/* .container_button button:focus{  :focus --> Click al boton
     background: black;
     color: #fff;
-}
+} */
 
 .container_options__button {
     background-color: transparent;
@@ -135,19 +132,14 @@ button:hover {
     margin-top: 2px;
     font-size: 55px;
     font-weight: bolder;
-    color: black;
-    text-shadow: 0px 1px 10px #f0f; 
-
-
+    color: white;
 }
 
 #puntos_cpu {
     margin-top: 2px;
     font-size: 55px;
     font-weight: bolder;
-    color: black;
-    text-shadow: 0px 1px 10px #f0f; 
-
+    color: white;
 }
 
 .resultadito {
@@ -194,8 +186,13 @@ button:hover {
     --animate-duration: 1.5s;
 }
 
+h1 {
+    margin-bottom: 0;
+}
+
 p {
-    text-align: center;
+		text-align: center;
+		margin: 3px 0;
 }
 /*------------------------ Desktop First que empieces desde el Media Queties mas grande ------------------------*/
 

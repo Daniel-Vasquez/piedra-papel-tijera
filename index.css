@@ -9,6 +9,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
+    background-image: url('https://i.pinimg.com/736x/a9/a5/0e/a9a50e41264395e1dea7e682aa22b110.jpg');
+    background-size: 100%;
 }
 
 .header {
@@ -39,6 +41,7 @@ body {
     margin-bottom: 30px;
     cursor: crosshair;
     transition: all 0.9s;
+    backdrop-filter: blur(3px);
     /* transform: scale(0.5); Para que se haga pequeño sin necesidad de cambiar el width o height  */
 }
 
@@ -72,6 +75,7 @@ body {
     border-radius: 15px;
     background-color: rgba(0, 0, 0, .2);
     cursor: crosshair;
+    backdrop-filter: blur(3px);
 }
 
 .container_options_img {

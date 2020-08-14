@@ -10,7 +10,7 @@ body {
     background-attachment: fixed;
     color: white;
     background-image: url('https://i.pinimg.com/736x/a9/a5/0e/a9a50e41264395e1dea7e682aa22b110.jpg');
-    background-size: 100%;
+    background-size: 100% 100vh;
 }
 
 .header {

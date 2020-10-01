@@ -178,7 +178,7 @@ h1 {
 
 p {
 	text-align: center;
-	margin: 3px 0;
+	margin: 0;
 }
 /*------------------------ Desktop First que empieces desde el Media Queties mas grande ------------------------*/
 
@@ -188,7 +188,6 @@ p {
 @media screen and (max-width: 480px) {
   p {
       font-size: 30px;
-      margin: 5px 0;
       text-align: center;
 	}
 	
